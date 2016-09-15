@@ -1,0 +1,20 @@
+# Language setting
+language: python
+
+# Version number
+python:
+  - 2.7.11
+
+env:
+  global:
+    - MYENV=myenv
+    
+build:
+  pre_ci:
+    pip install --upgrade awscli
+    
+  pre_ci_boot:
+   
+  ci:
+
+  post_ci:
